@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza Memory</title>
+    <script src="jquery-3.6.3.min.js"></script>
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="backgrounddiv">
+        <div class="bgdiv" id="_bg1"></div>
+        <div class="bgdiv" id="_bg2"></div>
+        <div class="bgdiv" id="_bg3"></div>
+        <div class="bgdiv" id="_bg4"></div>
+    </div>
+
+    <div id="homepage"><button id="homepagebutt" class="homepageclass" onClick="parent.location='https://rremigiusz.gay/'"><img src="logo.png" id="logoimg"></button></div>
+
+    <h1>Pizza memory game 🍕</h1>
+    
+    <div id="makepizzadiv" class="alldiv" style="display: none;">
+        <button class="_mpbutton" id="_mp1"></button>
+        <button class="_mpbutton" id="_mp2"></button>
+        <button class="_mpbutton" id="_mp3"></button>
+        <button class="_mpbutton" id="_mp4"></button>
+        <button class="_mpbutton" id="_mp5" style="visibility: hidden;"></button>
+    </div>
+    
+    <div id="whatpizzadiv" class="alldiv" style="display: none; background-image: url(pustapizza.png); background-size: cover;">
+        <div class="_wpclass" id="_wp1"></div>
+        <div class="_wpclass" id="_wp2"></div>
+        <div class="_wpclass" id="_wp3"></div>
+        <div class="_wpclass" id="_wp4"></div>
+        <div class="_wpclass" id="_wp5"></div>
+    </div>
+
+    <div id="cdtopizzadiv" class="alldiv" style="display: none;"></div>
+
+    <div id="startgame">
+        <div class="sg">Witaj w grze Pizza memory 🍕!</div>
+        <div class="sg">Zasady gry:</div>
+        <div class="sg">Masz X sekund na zapamiętanie składników pizzy, po tym czasie pizza znika i po 3 sekundach pojawia się nowa, pusta pizza, którą sam musisz uzupełnić.</div>
+        <div class="sg"> Na uzupełnienie masz 10 sekund. Powodzenia!</div><br>
+        <button type="button" id="tniemozliwy" class="trudnosc" value="1">niemożliwy</button>
+        <button type="button" id="ttrudny" class="trudnosc" value="1">trudny</button>
+        <button type="button" id="tsredni" class="trudnosc" value="2">średni</button>
+        <button type="button" id="tlatwy" class="trudnosc" value="3">łatwy</button><br><br>
+        <button type="button" id="sgbutton" style="visibility: hidden;">START</button><br><br>
+        <div id="_trdiv" class="sg" style="visibility: hidden;"></div>
+    </div>
+    
+    <div id="addonsdiv" class="alldiv" style="display: none;">
+        <button type="button" class="adddiv" id="_add1" value="1"></button>
+        <button type="button" class="adddiv" id="_add2" value="2"></button>
+        <button type="button" class="adddiv" id="_add3" value="3"></button>
+        <button type="button" class="adddiv" id="_add4" value="4"></button>
+        <button type="button" class="adddiv" id="_add5" value="5"></button>
+        <button type="button" class="adddiv" id="_add6" value="6"></button>
+    </div>
+
+    <div id="heartsdiv" style="display: none;">
+        <div class="_hdclass" id="hd1"></div>
+        <div class="_hdclass" id="hd2"></div>
+        <div class="_hdclass" id="hd3"></div>
+    </div>
+
+    <button id="skiptime" style="display: none;"></button>
+    <div id="timerdiv" class="alldiv" style="display: none;"></div>
+    <div id="wyn" class="alldiv" style="display: none;">score 0</div>
+    <button id="endbutton" style="display: none;">KONIEC GRY</button>
+    <div id="endgamediv" style="display: none;"></div>
+    <button id="restartgamebutton" style="display: none;">RESTART</button>
+    <div id="stopka">Remigiusz Franke &copy; 2023</div>
+</body>
+</html>
